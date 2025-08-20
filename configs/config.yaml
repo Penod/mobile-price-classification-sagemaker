@@ -1,0 +1,8 @@
+region: us-east-2              # AWS region code
+bucket: mobilepricesagemaker   # replace with your bucket name
+prefix: sagemaker/mobile_price_classification/sklearncontainer
+
+train_instance_type: ml.m5.large
+use_spot: true
+max_run: 3600
+max_wait: 7200                 # must be >= max_run if use_spot is true
