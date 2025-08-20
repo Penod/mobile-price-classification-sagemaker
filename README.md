@@ -1,5 +1,4 @@
-
-# 📱 Mobile Price Classification — End‑to‑End on Amazon SageMaker
+# Mobile Price Classification — End‑to‑End on Amazon SageMaker
 
 An end‑to‑end ML pipeline that trains a **Random Forest** to classify mobile price ranges, using:
 **pandas** for prep, **Amazon S3** for data, and **Amazon SageMaker (SKLearn)** for training & (optional) deployment.
@@ -38,3 +37,17 @@ Local Notebook  →  S3 (train/test CSVs)
 **Files**
 - `mobpriceclassification_polished.ipynb` — the full, annotated notebook.
 - `script.py` — the training entry point executed inside the SKLearn container (created by the notebook).
+- ## 🖼️ Screenshots
+
+**Training job (completed, Spot savings)**  
+![Training job summary](docs/img/training-job-completed.png)
+
+**S3 buckets (region us-east-2)**  
+![S3 buckets](docs/img/s3-buckets.png)
+
+**S3 artifacts (training outputs & model)**  
+![S3 bucket objects](docs/img/s3-bucket-objects.png)
+
+**Deployed endpoint (InService)**  
+![Endpoint InService](docs/img/endpoints-inservice.png)
+
